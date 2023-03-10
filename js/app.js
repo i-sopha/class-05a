@@ -9,11 +9,12 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sum(a, b) { //eslint-disable-line
-
+    let sum = a + b;
+    return [sum, `The sum of ${a} and ${b} is ${sum}.`];
 }
 
 // Here is the test for sum(); uncomment it to run it
-// testSum(4, 7);
+testSum(4, 7);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -27,11 +28,12 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
-
+    let product = a * b;
+    return [product, `The product of ${a} and ${b} is ${product}.`];
 }
 
 // Here is the test for multiply(); uncomment it to run it
-// testMultiply(5,9);
+testMultiply(5,9);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -48,11 +50,25 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
+    // let firstSum = sum(a, b)[0];
+    // console.log(firstSum);
+    // let finalSum = sum(c, firstSum)[0];
+    // console.log(finalSum);
 
+    // let firstProduct = product(a, b)[0];
+    // console.log(firstProduct);
+    // let finalProduct = product(c, firstSum)[0];
+    // console.log(finalProduct);
+
+    let sum = a + b + c;
+    let product = a * b * c;
+    let sumString = '4 and 7 and 5 sum to 16.';
+    let productString = 'The product of 4 and 7 and 5 is 140.';
+    return [sum, product, sumString, productString];
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
