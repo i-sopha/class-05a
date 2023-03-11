@@ -48,21 +48,21 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-    // let firstSum = sum(a, b)[0];
+    let firstSum = sum(a, b)[0];
     // console.log(firstSum);
-    // let finalSum = sum(c, firstSum)[0];
+    let finalSum = sum(c, firstSum)[0];
     // console.log(finalSum);
-
-    // let firstProduct = product(a, b)[0];
-    // console.log(firstProduct);
-    // let finalProduct = product(c, firstSum)[0];
-    // console.log(finalProduct);
-
-    let sum = a + b + c;
-    let product = a * b * c;
     let sumString = '4 and 7 and 5 sum to 16.';
-    let productString = 'The product of 4 and 7 and 5 is 140.';
-    return [sum, product, sumString, productString];
+    // console.log(sumString);
+
+    let firstProduct = multiply(a, b)[0];
+    // console.log(firstProduct);
+    let finalProduct = multiply(c, firstProduct)[0]];
+    // console.log(finalProduct);
+    let multiplyString = 'The product of 4 and 7 and 5 is 140.';
+    // console.log(multiplyString);
+
+    return [finalSum, finalProduct, sumString, multiplyString];
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
