@@ -57,7 +57,7 @@ function sumAndMultiply(a, b, c) { //eslint-disable-line
 
     let firstProduct = multiply(a, b)[0];
     // console.log(firstProduct);
-    let finalProduct = multiply(c, firstProduct)[0]];
+    let finalProduct = multiply(c, firstProduct)[0];
     // console.log(finalProduct);
     let multiplyString = 'The product of 4 and 7 and 5 is 140.';
     // console.log(multiplyString);
